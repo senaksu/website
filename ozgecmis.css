@@ -1,0 +1,42 @@
+table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    font-size:15px;
+    width: 600px;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+     background-color: rgb(5, 5, 5);
+    color: whitesmoke;
+}
+.table th{
+      background-color: rgb(5, 5, 5);
+   
+}
+.table{
+    margin: 30px;
+   
+}
+.baslik{
+    margin: 30px;
+}
+
+body{
+    margin: 0;
+}
+.alt{
+	text-align: center;
+	color: black;
+  }

@@ -1,0 +1,46 @@
+.film{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin:2% 0% 3% 3%;
+}
+
+
+
+#ilgi
+{
+	margin:5% 3% 0% 5%
+}
+
+
+
+h3{
+    
+    text-align: center;
+}
+.resim1{
+    margin-left: 100px;
+}
+
+.resim2{
+    margin-left: 100px;
+}
+h1{
+   margin-left: 20%;
+   margin-top: 10%;
+
+}
+p{
+    text-align: justify;
+}
+
+img {
+	max-width: 100%;
+	height:auto;
+	box-sizing:border-box;
+	display:block;
+	}
+
+.alt{
+	text-align: center;
+	color: black;
+  }

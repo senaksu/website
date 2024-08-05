@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sena Aksu~ İlgi Alanlarım</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="ilgialanlarim.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+
+
+
+
+    <style>
+		.sidenav {
+		  height: 100%;
+		  width: 0; /*Genişliği javascriptle değiştir*/
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: black;
+		  overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
+		  transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
+		  padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
+		}
+		
+		.sidenav a {
+		  font-family: 'Lato', sans-serif;
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #818181;
+		  display: block;
+		  transition: 0.3s;
+		}
+		/*Menüler üzerine gelince  renklerini değiştirin */
+		
+		.sidenav a:hover {
+		  color:rgb(248, 238, 238); 
+		}
+		/*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
+		
+		.sidenav .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+		/* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
+		sidenav stilini değiştirin 
+		(daha az dolgu ve daha küçük bir yazı tipi boyutu) */
+		
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		</style>
+</head>
+
+<body>
+<div id="YanMenu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+  
+    &times;</a>
+  
+    <a href="anasayfa.html">Anasayfa</a>
+    <a href="hakkimda.html">Hakkımda</a>
+    <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+    <a href="ozgecmis.html">Özgeçmiş</a>
+    <a href="sehrim.html">Şehrim</a>
+    <a href="mirasimiz.html">Mirasımız</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="giris.html">Giriş</a>
+  
+    
+  
+  </div>
+  
+  
+  <span style="font-size:35px;cursor:pointer; color: black;" onclick="openNav()">
+  &#9776; 
+  </span> 
+  	  <!-- javascript ile menuyu açma kapatma -->
+	  
+        <script>
+            function openNav() {
+              document.getElementById("YanMenu").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("YanMenu").style.width = "0";
+            }
+            </script>
+
+
+  
+<section class="sayfaTasma">
+		    
+  <section class="row" id="hakkindaRow">
+      
+      <aside class="col-sm-5 col-md-5">
+
+          
+              <div class="card-body"> <img class="card-img-top" src="images/bisiklet.webp"> </div>
+          </div>
+      </aside>
+      
+      <article class="col-sm-5 col-md-5" id="ilgi">
+          
+          <p>&nbsp; &nbsp; Film  ve dizi izlemeyi severim. Bilim kurgu ve aksiyonu daha fazla tercih ederim. Bisiklet sürmeyi çok seviyorum. Bisikletimle  seyahat turu yapmak planlarımın arasında.  Aslında bisiklet sürmek normal bir aktivite gibi gözükse de hiçbir şey bisiklet sürmenin basit zevkine benzemiyor. Gezi ve seyahat konusunda  <a href="https://www.youtube.com/c/Yi%C4%9FitCan%C4%B0%C3%87/videos">Yiğit Can İÇ</a>'in videoları çok hoşuma gidiyor.  </p>    
+      </article>   
+      
+  </section>
+</br>
+
+
+<section class="row" id="hakkindaRow">
+      
+  <aside class="col-sm-5 col-md-5">
+
+      
+          <div class="card-body"><a href="https://youtu.be/_oS0ucO5Ix8"><img class="card-img-top" src="images/müzik1.jpg"></a>  </div>
+      
+  </aside>
+  
+  <article class="col-sm-5 col-md-5" id="ilgi">
+      <div>
+      <p>&nbsp; &nbsp; Müzik  dinlemek hayatımın tam merkezinde hiçbir işi müzik dinlemeden yapamam. Müzik türü de  hiç farketmez ruh halime göre her şeyi dinleyebilirim:) Resime tıklayark bu ara fazla dinlediğim şarkıya ulaşabilirsiniz.. </p>    
+  </div>
+  </article>   
+  
+</section>
+  <br>
+  <header>
+      <h3>Favori Filmim</h3>
+  </header>
+ 
+  <article class="row">
+      
+      <div class="col-sm-3 col-s-3 film">
+          <div class="card">
+              <div class="card-header"> 
+                  <figure id="resim1">  </figure> 
+              </div>
+              <div class="card-body" id="aciklama1"></div>
+             
+          </div>
+         
+      </div>
+      
+  
+  <article>
+  
+</section>
+
+
+<footer class="alt">
+   
+  <i>  2022 ~ Sena Aksu</i>
+  
+  </footer>
+  <br>
+
+
+
+<script>
+ 
+    
+    
+    
+    var aciklama1=document.getElementById("aciklama1")
+    var resim1=document.getElementById("resim1")
+    
+    var data=fetch("http://www.omdbapi.com/?t=shutter+island&apikey=eb24c1bc")
+    .then(response=>response.json())
+    .then(veri=>{
+        aciklama1.innerHTML=veri.Title+" "+veri.Year+" Yönetmen: "+veri.Director+" imdb: "+veri.imdbRating
+        resim1.innerHTML= `<img class="card-img-top" src="${veri.Poster}">`
+    });
+    
+    
+
+    
+</script>
+
+
+			
+</body>
+</html>

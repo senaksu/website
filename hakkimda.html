@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sena Aksu ~ Hakkımda</title>
+    <link rel="stylesheet" href="hakkimda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <style>
+		.sidenav {
+		  height: 100%;
+		  width: 0; /*Genişliği javascriptle değiştir*/
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: black;
+		  overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
+		  transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
+		  padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
+		}
+		
+		.sidenav a {
+		  font-family: 'Lato', sans-serif;
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #818181;
+		  display: block;
+		  transition: 0.3s;
+		}
+		/*Menüler üzerine gelince  renklerini değiştirin */
+		
+		.sidenav a:hover {
+		  color:rgb(248, 238, 238); 
+		}
+		/*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
+		
+		.sidenav .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+		/* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
+		sidenav stilini değiştirin 
+		(daha az dolgu ve daha küçük bir yazı tipi boyutu) */
+		
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		</style>
+
+</head>
+<body>
+    <div id="YanMenu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+      
+        &times;</a>
+      
+        <a href="anasayfa.html">Anasayfa</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+        <a href="ozgecmis.html">Özgeçmiş</a>
+        <a href="sehrim.html">Şehrim</a>
+        <a href="mirasimiz.html">Mirasımız</a>
+        <a href="iletisim.html">İletişim</a>
+        <a href="giris.html">Giriş</a>
+      
+        
+      
+      </div>
+      
+      
+      <span style="font-size:35px;cursor:pointer; color: white;" onclick="openNav()">
+      &#9776; 
+      </span> 
+            <!-- javascript ile menuyu açma kapatma -->
+          
+            <script>
+                function openNav() {
+                  document.getElementById("YanMenu").style.width = "250px";
+                }
+                
+                function closeNav() {
+                  document.getElementById("YanMenu").style.width = "0";
+                }
+                </script>
+    
+<section>
+    <div class="container">
+        <div class="grid">
+            <div class="left">
+                <img src="images/ben.jpeg" alt="">
+            </div>
+            <div class="right">
+                <h1> Merhaba </h1>
+                
+                <p>Ben Sena Aksu. Ankara'da yaşıyorum. Şu anda <a href="https://cs.sakarya.edu.tr/">Sakarya Üniversitesi Bilgisayar Mühendisliği</a> birinci sınıf öğrencisiyim. Seyahat etmeyi yeni yerler keşfetmeyi çok severim. Masa tenisi oynamak yeni hobilerim arasında  kendimi ileri düzeyde geliştirmeyi düşünüyorum.  </p>
+           <a href="ilgialanlarim.html" class="btn">İlgi Alanlarım</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="alt">
+   
+  <i>  2022 ~ Sena Aksu</i>
+  
+  </footer>
+  <br>
+
+</body>
+</html>

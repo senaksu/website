@@ -1,0 +1,170 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mirasimiz.css">
+<title>Sena Aksu</title>
+<style>
+.sidenav {
+  height: 100%;
+  width: 0; /*Genişliği javascriptle değiştir*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
+  transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
+  padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
+}
+
+.sidenav a {
+  font-family: 'Lato', sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/*Menüler üzerine gelince  renklerini değiştirin */
+
+.sidenav a:hover {
+  color:rgb(248, 238, 238); 
+}
+/*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
+sidenav stilini değiştirin 
+(daha az dolgu ve daha küçük bir yazı tipi boyutu) */
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="YanMenu" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+
+  &times;</a>
+
+  <a href="index.html">Anasayfa</a>
+  <a href="hakkimda.html">Hakkımda</a>
+  <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+  <a href="ozgecmis.html">Özgeçmiş</a>
+  <a href="sehrim.html">Şehrim</a>
+  <a href="mirasimiz.html">Mirasımız</a>
+  <a href="iletisim.html">İletişim</a>
+  <a href="giris.html">Giriş</a>
+
+  
+
+</div>
+
+
+<span style="font-size:30px;cursor:pointer; color:white;" onclick="openNav()">
+&#9776; 
+</span>
+
+<!-- javascript ile menuyu açma kapatma -->
+
+<script>
+function openNav() {
+  document.getElementById("YanMenu").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("YanMenu").style.width = "0";
+}
+</script>
+
+
+<header>
+    <video  controls="" autoplay="autoplay"  >
+  <source src="images/anıtkabir2.mp4" type="video/mp4">
+    </video>
+  </header>
+
+
+<div class="baslik"><h1>ANITKABİR</h1></div>
+
+
+<div class="sol1">
+  <img src="https://icdn.tgrthaber.com.tr/static/haberler/2021_11/xbuyuk/10-kasim-da-anitkabir-kaca-kadar-acik-anitkabir-ziyaret-saatleri-ve-10-kasim-pro-1636357290.jpg"  height="280px" width="500px"  alt="" class="sag1">
+ <p><strong> Anıtkabir, Mustafa Kemal Atatürk’ün vefatını takip eden günlerde tüm halkın ortak isteği ile hayata geçirilen bir anıt mezar projesi.
+  10 Kasım 1938 tarihinde Atatürk’ün kaybedilmesi ile, onun açtığı aydınlanma yolunun ölümsüzleştirilmesi ve ona duyulan minnettarlığın vücut bulması herkesin ortak arzusu haline geldi.
+  Uluslararası bir mimari yarışmasına da konu olan bu hisler iki Türk mimarın elinde hayat buldu. 
+  1941 yılında açılan yarışmanın finalistlerinden olan Prof. Dr. Emin Onat ve Doç. Dr. Orhan Arda’ya ait projenin inşasına 1944 yılında başlandı.  
+  İnşaatı 9 yıl süren, 4 ana aşamada tamamlanan ve Türk halkı için büyük önemi bulunan bu yapı; 1953 yılından bu yana Anıttepe olarak da bilinen toprakları süslüyor.
+  Projenin hayata geçirilmesi aşamasında Anıtkabir’in yeri için Çankaya, Ankara Kalesi, Gazi Orman Çiftliği ya da Altındağ gibi alternatifler seçici kurul tarafından değerlendirilse de, 
+  o dönem Rasattepe olarak anılan yere karar verilmesinde özel bir neden de var.
+  Mustafa Kemal Atatürk’ün yıllar önceki bir Ankara gezisi sırasında burası için “Bu tepe ne güzel bir anıt yeri…” değerlendirmesinde bulunduğu biliniyor. 
+  Aynı tepede yer alan ve Anıtkabir kazısı sırasında ortaya çıkarılan Frig uygarlığına ait mezarlar ve arkeolojik kalıntılar ise günümüzde Anadolu Medeniyetleri Müzesi’nde sergileniyor.</strong> </p>
+  
+</div>
+
+
+  <div class="sol2">
+    <img src="images/anıtkabir.jpg"   alt="" class="sag2">
+    <p>
+      <strong>Anıtkabir’in tarihi öneminin yanında, ona kültürel ve sosyolojik olarak değer katan pek çok detay da mevcut.
+      Ankara’nın birçok yerinden görülebilen ve ışığı ile uzakları aydınlatan bu eser, Atatürk’ün bir silüeti niteliğinde.     
+      İçerisinde bulunan Şeref Holü’nde tüm dünyadan ziyaretçilerin en iyi şekilde karşılanabilmesi için her şey düşünülmüş durumda.      
+      İki ana bölümde incelenebilen Anıtkabir, Barış Parkı ve Anıt Bloku’ndan oluşuyor.
+            Anıt Bloku girişinde bulunan aslanlı yoldaki 24 heykel, 24 Oğuz boyunu temsil ederek Türk tarihine selam veriyor.
+            Yol boyunca aslanların varlığı kuvveti ve sükuneti çağrıştırıyor.
+            Çift halinde olmaları birlik ve bütünlük kavramlarını sembolize ederken, yatar pozisyonda olmaları barışı vurguluyor.
+            Aslanlı Yol’daki taşların aralıklı dizilmesi bile, ziyaretçilerin Ata’nın huzuruna başları öne eğik çıkmalarını sağlaması bakımından anlamlı.
+           Burada aynı zamanda bir tören meydanı ve mozole var.
+            Anıtkabir’in diğer bölümü olan Barış Parkı ise Atatürk’ün “Yurtta sulh, cihanda sulh” sözünden ilham alıyor.
+            104 ayrı türden 48 bin 500 adet ağaç, parkın içinde yükselmeye devam ediyor.
+           Anıtkabir’de bulunan kulelerin isimleri bile, Türk kültüründe ve uygarlık yolunda belirleyici olan kavramlara dikkat çekmek için yeterli.
+           Anıtkabir sınırları içinde İstiklal, Hürriyet, Mehmetçik, Zafer, Barış, 23 Nisan, Misak-ı Milli, Müdafaa-i Hukuk, Cumhuriyet ve İnkılap kuleleri mevcut.
+            Yine Anıtkabir içinde yer alan Atatürk ve Kurtuluş Savaşı Müzesi’nde Atatürk’ün aldığı özel hediyeler, nüfus cüzdanı, saatleri, madalyaları, tabancaları ve kitapları sergilenmeye devam ediyor.
+           Anıtkabir’in Mezar Odası olarak adlandırılan bölümünde ise Mustafa Kemal Atatürk, yurdun dört bir köşesinden getirilen vatan toprağının içinde yatıyor.
+    Vatan toprağına ayrıca Atatürk’ün Selanik’teki evinin bahçesinden, Kore’deki Türk Şehitliği’nden, Kıbrıs’tan özellikle getirilen topraklar da dahil bulunuyor.
+     Anıtkabir ziyareti sırasında bu bölümü ziyaret etmek mümkün değil. Mezar odasının açılabilmesi için Genelkurmay Başkanlığı’nın özel izni gerekiyor.</strong>
+    </p>
+
+  </div>
+<div class="sol3">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6119.460363377674!2d32.83256653488768!3d39.925053999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f190a9cea8f%3A0xd3862ea8248d08a0!2sAn%C4%B1tkabir!5e0!3m2!1str!2str!4v1652212284315!5m2!1str!2str" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="sag3"></iframe>
+<p>
+  <br>
+  <br>
+  <br>
+  <br>
+  Anıtkabir; daha önce bir gözlem istasyonuna ev sahipliği yaptığı için Rasattepe olarak adlandırılan bir tepe üzerinde yer alıyor.
+  Anıt Caddesi, Tandoğan, Çankaya açık adresinde bulunan anıt mezara Ankara’nın birçok yerinden kolaylıkla ulaşmak mümkün.
+  Türkiye’nin tam merkezinde olan Ankara’nın, yine tam ortasında da Anıtkabir’in bulunduğunu söylemek hata olmaz.</p>
+</div>
+     
+        
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+<footer class="alt">
+   
+<i>  2022 ~ Sena Aksu</i>
+
+</footer>
+<br>
+  
+
+   
+</body>
+</html>

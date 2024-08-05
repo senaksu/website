@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+
+header {
+    position: relative;
+    height: 95vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+  
+  
+  header video {
+    position: absolute;
+    margin-top: 0%;
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+.baslik{
+ 
+font-size: xx-large;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+position: relative;
+text-align: center;
+color: white;
+
+}
+
+  .sol1{
+    width:auto;
+    margin: 30px;
+    text-align: justify;
+  }
+  .sag1{
+    float: right;
+    padding: 0 30px 0 10px;
+  }
+  p{
+   font-size: large;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ padding-bottom: 3em;
+ color: white;
+ 
+  }
+  .sol2{
+    width:auto;
+    margin: 30px;
+    text-align: justify;
+  }
+  .sag2{
+    float: left;
+    padding: 0 30px 0 10px;
+ 
+  }
+  .sol3{
+    width:auto;
+    margin: 30px;
+    text-align: justify;
+  }
+  .sag3{
+    float: right;
+    padding: 0 30px 50px 10px;
+  }
+  img {
+    max-width: 100%;
+    height:auto;
+    box-sizing:border-box;
+    display:block;
+    }
+
+    video{
+      
+        max-width: 100%;
+        height:auto;
+        box-sizing:border-box;
+        display:block;
+     
+    }
+ 
+.alt{
+  text-align: center;
+  color: white;
+}
+  
+  
+
+
+ 
+
+
+  
+
+  
+ 

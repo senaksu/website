@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Sena Aksu ~ Şehrim</title>
+    <link rel="stylesheet" href="sehrim.css">
+	<style>
+		.sidenav {
+		  height: 100%;
+		  width: 0; /*Genişliği javascriptle değiştir*/
+		  position: fixed;
+		  z-index: 1;
+		  top: 0;
+		  left: 0;
+		  background-color: black;
+		  overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
+		  transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
+		  padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
+		}
+		
+		.sidenav a {
+		  font-family: 'Lato', sans-serif;
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #818181;
+		  display: block;
+		  transition: 0.3s;
+		}
+		/*Menüler üzerine gelince  renklerini değiştirin */
+		
+		.sidenav a:hover {
+		  color:rgb(248, 238, 238); 
+		}
+		/*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
+		
+		.sidenav .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+		/* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
+		sidenav stilini değiştirin 
+		(daha az dolgu ve daha küçük bir yazı tipi boyutu) */
+		
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+		</style>
+</head>
+
+<body style="height: 2000px;">
+
+    <div class="slider">
+		<!-- fade css -->
+		<div class="myslide fade">
+			
+		<a href="#ankara"><img src="images/ankara.jpg" id="sliderimg1" style="width: 100%; height: 100%;"></a>
+		</div>
+		
+		<div class="myslide fade">
+			
+			<a href="#atakule"><img src="images/atakule.jpg"  id="sliderimg2" style="width: 100%; height: 100%;"></a>
+		</div>
+		
+		<div class="myslide fade">	
+			<a href="#mogan"><img src="images/mogan-parki.jpeg"  id="sliderimg3"  style="width: 100%; height: 100%;"></a>
+		</div>
+		
+		<div class="myslide fade">
+			<a href="#ankarakale"><img src="images/ankarakalesi.jpg" id="sliderimg4"  style="width: 100%; height: 100%;"></a>
+		</div>
+		
+		<div class="myslide fade">
+			
+			<a href="#hamamonu"><img src="images/hamamönü.jpeg"  id="sliderimg5" style="width: 100%; height: 100%;"></a>
+		</div>
+		<!-- /fade css -->
+		
+		<!-- onclick js -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+		<!-- /onclick js -->
+	</div>
+
+
+
+	<div id="YanMenu" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+	  
+		&times;</a>
+	  
+		<a href="index.html">Anasayfa</a>
+		<a href="hakkimda.html">Hakkımda</a>
+		<a href="ilgialanlarim.html">İlgi Alanlarım</a>
+		<a href="ozgecmis.html">Özgeçmiş</a>
+		<a href="sehrim.html">Şehrim</a>
+		<a href="mirasimiz.html">Mirasımız</a>
+		<a href="iletisim.html">İletişim</a>
+		<a href="giris.html">Giriş</a>
+	  
+		
+	  
+	  </div>
+	  
+	  
+	  <span style="font-size:35px;cursor:pointer; color: black;" onclick="openNav()">
+	  &#9776; 
+	  </span> 
+
+
+
+            </br></br>
+			<a name="ankara"></a>
+			<div class="baslik1"><h1>ANKARA</h1></div>
+             
+			<div class="sol1">
+				<img src="images/ankarakonum1.png"  height="250px" width="600px"  alt="ankara konumu" class="sag1">
+			   <p>
+			<strong> Ankara, Türkiye'nin başkenti ve en kalabalık ikinci ilidir. Nüfusu 2022 yılı itibarıyla 5.747.325 kişidir.
+				    Bu nüfus; 25 ilçe ve bu ilçelere bağlı 1425 mahallede yaşamaktadır. İl genelinde nüfus yoğunluğu 215'tir.
+					 Nüfuslarına göre şehirler listesinde belediye sınırları göz önüne alınarak yapılan sıralamaya göre dünyada ise elli yedinci sırada yer almaktadır.
+					  Coğrafi olarak Türkiye'nin merkezine yakın bir konumda bulunur ve Batı Karadeniz Bölgesi'nde kalan kuzey kesimleri hariç, büyük bölümü İç Anadolu Bölgesi'nde yer alır. Yüzölçümü olarak ülkenin üçüncü büyük ilidir.
+					   Bolu, Çankırı, Kırıkkale, Kırşehir, Aksaray, Konya ve Eskişehir illeri ile çevrilidir.
+					   Ankara'nın 13 Ekim 1923'te başkent ilan edilmesinin ardından şehir hızla gelişmiş ve Türkiye'nin ikinci en kalabalık ili olmuştur.[kaynak belirtilmeli] Türkiye Cumhuriyeti'nin ilk yıllarında ekonomisi tarım ve hayvancılığa dayanan ilin topraklarının yarısı hâlâ tarım amaçlı kullanılmaktadır. Ekonomik etkinlik büyük oranda ticaret ve sanayiye dayalıdır. Tarım ve hayvancılığın ağırlığı ise giderek azalmaktadır. Ankara ve civarındaki gerek kamu sektörü gerek özel sektör yatırımları, başka illerden büyük bir nüfus göçünü teşvik etmiştir. Cumhuriyetin kuruluşundan günümüze, nüfusu ülke nüfusunun iki katı hızda artmıştır. Nüfusun yaklaşık dörtte üçü hizmet sektörü olarak tanımlanabilecek memuriyet, ulaşım, haberleşme ve ticaret benzeri işlerde, dörtte biri sanayide, %2'si ise tarım alanında çalışır. Sanayi, özellikle tekstil, gıda ve inşaat sektörlerinde yoğunlaşmıştır. Günümüzde ise en çok savunma, metal ve motor sektörlerinde yatırım yapılmaktadır. Türkiye'nin en çok sayıda üniversiteye sahip ili olan Ankara'da ayrıca, üniversite diplomalı kişi oranı ülke ortalamasının iki katıdır. Bu eğitimli nüfus, teknoloji ağırlıklı yatırımların gereksinim duyduğu iş gücünü oluşturur. Ankara'dan otoyollar, demir yolu ve hava yoluyla Türkiye'nin diğer şehirlerine ulaşılır.
+			</strong> </p>
+			</div>
+		</br></br></br>
+			  </div>
+			  <a name="atakule"></a>
+			  <div class="altbaslik"><strong>ATAKULE</strong></div>
+			  <div class="sag2">
+				  <img src="images/atakule.jpg"  height="250px" width="500px"  alt="ankara konumu" class="sol2">				
+				  <p>
+			  <strong>Atakule Alışveriş Merkezi, Ankara'da, döner restoranlı kulesi ile meşhur alışveriş merkezi. Çankaya semtinde, Cinnah Caddesi ile Çankaya Caddesi'nin kesiştiği, Zübeyde Hanım Meydanı'na cepheli konumdadır.
+				13 Ekim 1989 tarihinde Ankara'nın başkent oluşunun 66. yıldönümüne denk gelen günde 8. Cumhurbaşkanı Turgut Özal tarafından açılışı yapılan kulenin altında,
+				 Türkiye'nin ikinci ve Ankara'nın ilk Alışveriş Merkezi hizmet vermeye başlamıştır. Yapının adı bir yarışma sonucu belirlenmiştir. Modern alışveriş merkezinin plan ve projesi Mimar Ragıp Buluç tarafından hazırlandı.
+				  Kutlutaş İnşaat Firması ile tamamı Türk Mühendis ve işçileri tarafından inşa edilen alışveriş merkezi temelleri 1987 yılında dönemin Başbakanı Turgut Özal tarafından atıldı. İsmi, düzenlenen bir yarışma ile Ankara 
+				  halkı tarafından verilmiştir. Mimari yapısı ve konumu itibarıyla de önemli bir turizm merkezidir.12 Haziran 2011 tarihinde yeni ışıklandırmasının açılışı yapılmıştır. 2012 yılı içerisinde 
+				  tüm kiracılar tahliye edilmiş ve alışveriş merkezi kapanmıştır. Halen sadece seyir terası ile mal sahibi olan Vakıflar Bankası'nın şubesi faaliyettedir. 2014 yılında ise alışveriş merkezi kısmını yıkma çalışmaları başlamış,
+				   ancak temelde çıkan bir sorundan dolayı kulenin de sallandığı fark edilip yıkma çalışmaları bir süre durmuştur. Günümüzde alışveriş merkezinin yıkım işlemi tamamlanmış olmakla birlikte kule yerinde durmaktadır. Ancak seyir terası kapalıdır.
+
+			  </strong> </p>
+				  
+			</br></br></br>
+			  <a name="mogan"></a>
+			  <div class="altbaslik"><strong>MOGAN PARKI</strong></div>
+					<div class="sag3">
+						<img src="images/mogan-parki.jpeg"  height="250px" width="500px"  alt="ankara konumu" class="sol3">
+					   <p>
+					<strong>  Mogan sözcüğü etimolojik kökenini, tarihsel araştırmalar dahilinde hiçbir olguya dayandırmamaktadır.
+						 Bu sebepten dolayı sonradan yöre halkı tarafından türetildiği düşünülmektedir. Yöre halkının anlattığı efsaneye
+						  göre Monza ve Ganey isimli iki gencin birbirine aşık olup kavuşamaması üzerine, gözyaşlarının bu Mogan Gölü'nün oluşmasında
+						   katkı sağladığı söylenmektedir. Bu yüzden halk arasında iki gencin isimlerinin birleştirilerek, göle verilmiştir. Mogan Gölü,
+						    Türkiye sınırları içerisinde yer alan, Ankara ili içerisinde bulunan gölbaşı ilçesinde yer almaktadır. Set göllerinden
+							 biri olan bu göl, yüzölçümü bakımından yaklaşık 63 km²'dir. Bunun dışında 14 milyon m³ su hacminin bulunduğu Mogan Gölünde, 
+							 yüzey rakamı ise 970 ve 1200 metre arasındadır.
+						   Mogan Gölü'nün ekolojik yaşam bakımından da oldukça zengin olduğunu söyleyebiliriz. Geçmişten bu yana toplamda 226 farklı kuş türüne
+						    ve göl altında da sazan, gümüş balığı, kadife balığı, kerevit ve turna balığı gibi daha birçok balık türüne de ev sahipliği yapmaktadır.
+							 Bunun haricinde Mogan Gölü, iki ayrı göl olarak da kendi içerisinde ayrılmaktadır. Mogan Gölünün büyük olan kısmı Gölbaşı olarak bilinmektedir. 
+							 Gölbaşı, alüvyonal göllerden biri olarak tanınmakta ve tektonik olaylar sonucu yer kabuğunda oluşan göçme durumundan meydana gelmiştir. Mogan Gölü 
+							 ve çevresi yaşanan çevresel kirlenmeler sonucu fazla etkilendiği için Barcelona Sözleşmesiyle, canlı ve doğa yaşamı koruma altına alınmıştır. 
+	
+					</strong> </p>
+						
+					  </div>
+					</br></br></br>
+					
+					  <a name="ankarakale"></a>
+					  <div class="altbaslik"><strong>ANKARA KALE</strong></div>
+					  <div class="sag4">
+						  <img src="images/ankarakalesi.jpg"  height="250px" width="500px"  alt="ankara konumu" class="sol4">
+						 <p>
+						<strong>Ankara Kalesi’nin tarihi Ankara şehrinin tarihi ile bire bir aynıdır. Efsaneye göre bütün mesele Frig Kralı Midas’ın rüyası
+							 ile başlar. Günümüzde Ankara’nın Polatlı ilçesinde yaklaşık 28 km uzaklıkta bulunan Antik Gordion şehrinde bulunan Frig Kralı Midas bir gece rüyasında bir sesin ona 
+							 Topraklarında hemen bir gemi çapası aramasını ve çapanın bulunduğu yere şehir kurmasını, bu şehrin ona mutluluk getireceğini söylediğini görür. Midas bunun üzerine şehirde tüm adamlarına çapa aramasını emreder ve 
+							 günümüzde Ankara Kalesinin bulunduğu noktada çağa bulunur. Midas çapanın bulunduğu yere şehir kurar ve ismini gemi çapası anlamına gelen “Anker” ve ya “Ankira” ismini verir.
+							 Ankara Kalesi Ankara’nın Altındağ ilçesi içerisinde bulunur. Bugün kale içindeki değişik dönemlerden kalmış birçok eski Ankara Evi bulunmaktadır. Kaleiçi Mahallesi’nde bulunan eski Ankara evleri, 
+							 sur duvarları ile çevrili dar ve dik bir alanda konumlandıkları için, planları dar alanlardan en çok faydalanmayı gözeterek yapılmış. İki ya da üç katlı olarak ahşap, kerpiç ve tuğladan inşa edilmişler. 
+							 Arazi yapısının düz olmaması, alt kat planlarının da düzgün olmamasına yol açmış, ama üst katlar cumba tipindeki çıkıntılarla düzgün bir plana kavuşturulmuş.
+							 Alt katlar kışlık olarak, kalın duvarlı ve küçük pencereli yapılmış, üst katlar ise yazlık olarak ince duvarlı ve havadar yapılmış. Geniş saçaklar ve “Cihannüma” denilen yazlık odalar Ankara evlerinin belirleyici
+							  özelliklerinden. Ahşap tavan süslemelerinde geometrik kompozisyonlar kullanılmıştır. Bazıları çeşitli hizmetlerde kullanılmaktadır. 17.yüzyılın ortasına doğru, 1640 yılında Ankara’ ya gelen Evliya Çelebi, kenti ve kentteki yaşamı ayrıntılı biçimde anlatmaktadır.
+							 Evliya Çelebi önce ünlü Ankara Kalesinden söz eder. “Ankara’nın yüksek bir dağın tepesine dört kat beyaz taştan yapılmış sağlam bir kalesi vardır. Kale iç içe üç kat surlarla çevrilidir. İç kalenin çevresi kayalıktır. Bu yalçın kayalardan kaleye
+							  tırmanmak çok zordur. İç kalede topları çeşitli silahlar, cephane ve 600 ev bulunur. İç Kale aşağılarda ikinci sıra surlarla çevrilidir. Dağın eteklerinde ise üçüncü sıra dış surlar yer alır. Bu dış surlarla tüm kent güvenlik altına alınmıştır.”
+
+					  </strong> </p>						  
+						</div>
+
+					</br></br></br>
+						<a name="hamamonu"></a>
+						<div class="altbaslik"><strong>HAMAMÖNÜ</strong></div>
+						<div class="sag5">
+							<img src="images/hamamönü.jpeg"  height="280px" width="500px"  alt="ankara konumu" class="sol5">
+						   <p>
+						<strong> Hamamönü, Ankara ilinin Altındağ ilçesinde bulunan tarihi bir semttir. Semtte bulunan 19. yüzyıl sivil mimarlık örneği tarihi binalar restore edilerek bölge yeniden canlandırılmıştır.
+							 Hamamönü, adını bir Türk boyu olan Oğuzların Bayındır boyu beylerinden Karacabey’in yaptırdığı çifte hamamdan almıştır. Tarihi Karacabey Hamamı burada bulunmaktadır. İstiklal Marşı’nın
+							  yazıldığı Mehmet Akif Ersoy parkı ve parkın içerisinde Mehmet Akif Ersoy Müze Evi yer almaktadır. Hamamöünde yer alan camiler; Taceddin Sultan Camii, Hacı İlyas Camii, Hacı Musa Camii,
+							   Sarıkadı Camii, Mehmet Çelebi Camiidir. Hamamönünde yer alan konaklar; Kamil Paşa Konağı, Beynamlızade Konağı, Kabakçı Konağıdır. Son dönem Osmanlı zamanından kalma evler tamamen Türk
+							    motifleri ile bezenmiş olup, sokaklarda gezdiğinizde kendinizi 19. yüzyıldaymış gibi hissediyorsunuz. Adeta günümüzden 150 yıl öncesinin sosyal yaşamını teneffüs edebiliyorsunuz.
+								Hamamönü’ndeki mimari yapıların neredeyse tamamı basit ve sade bir plan olarak tasarlanmıştır. Tüm yapıların neredeyse tamamında iç sofa tipleri yer almaktadır. Evlerin, 
+								konakların avlu kısımları toprak ya da taş kaplamadır. Sokaktan direkt olarak evin avlusuna geçilebilir şekilde dizayn edilmiştir.Evlerin alt katı daha çok hizmet amaçlı tasarlanmıştır.
+								
+			
+						</strong> </p>
+							
+						  </div>
+						</br></br></br>
+						<footer class="alt">
+   
+							<i>  2022 ~ Sena Aksu</i>
+							
+							</footer>
+							<br>
+						  
+  
+
+ 
+	  
+	  <!-- javascript ile menuyu açma kapatma -->
+	  
+	  <script>
+	  function openNav() {
+		document.getElementById("YanMenu").style.width = "250px";
+	  }
+	  
+	  function closeNav() {
+		document.getElementById("YanMenu").style.width = "0";
+	  }
+	  </script>
+	
+<script >
+	const myslide = document.querySelectorAll('.myslide'),
+	  dot = document.querySelectorAll('.dot');
+let counter = 1;
+slidefun(counter);
+
+let timer = setInterval(autoSlide, 8000);
+function autoSlide() {
+	counter += 1;
+	slidefun(counter);
+}
+function plusSlides(n) {
+	counter += n;
+	slidefun(counter);
+	resetTimer();
+}
+function currentSlide(n) {
+	counter = n;
+	slidefun(counter);
+	resetTimer();
+}
+function resetTimer() {
+	clearInterval(timer);
+	timer = setInterval(autoSlide, 8000);
+}
+
+function slidefun(n) {
+	
+	let i;
+	for(i = 0;i<myslide.length;i++){
+		myslide[i].style.display = "none";
+	}
+	for(i = 0;i<dot.length;i++) {
+		dot[i].className = dot[i].className.replace(' active', '');
+	}
+	if(n > myslide.length){
+	   counter = 1;
+	   }
+	if(n < 1){
+	   counter = myslide.length;
+	   }
+	myslide[counter - 1].style.display = "block";
+	dot[counter - 1].className += " active";
+}
+</script>
+
+	
+	
+</body>
+</html>
+
+

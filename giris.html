@@ -1,0 +1,159 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="giris.css">
+<title>Sena Aksu~İletişim</title>
+
+</head>
+<body>
+    <style>
+      
+        .sidenav {
+  height: 100%;
+  width: 0; /*Genişliği javascriptle değiştir*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden; /*Yatay kaydırmayı devre dışı bırak */
+  transition: 0.5s;/* Sidenav'da kaymaya 0,5 saniye geçiş efekti */
+  padding-top: 60px; /*İçeriği üstten 60 piksel yerleştirin */
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+/*Menüler üzerine gelince  renklerini değiştirin */
+
+.sidenav a:hover {
+  color:rgb(248, 238, 238); 
+}
+/*Kapat düğmesini konumlandırın ve stillendirin (sağ üst köşe) */
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Yüksekliğin 450 pikselden az olduğu daha küçük ekranlarda, 
+sidenav stilini değiştirin 
+(daha az dolgu ve daha küçük bir yazı tipi boyutu) */
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+    </style>
+
+<div id="YanMenu" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+
+  &times;</a>
+
+  <a href="index.html">Anasayfa</a>
+  <a href="hakkimda.html">Hakkımda</a>
+  <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+  <a href="ozgecmis.html">Özgeçmiş</a>
+  <a href="sehrim.html">Şehrim</a>
+  <a href="mirasimiz.html">Mirasımız</a>
+  <a href="iletisim.html">İletişim</a>
+  <a href="giris.html">Giriş</a>
+  
+
+</div>
+
+
+<span style="font-size:30px; margin: top 0;; cursor:pointer; color: azure;  " onclick="openNav()">
+  
+&#9776; 
+</span>
+
+<div class="content" id="content">
+
+    <div id="mainButton">
+      <div  class="btn-text" id="btnText" onclick="openForm()">GİRİŞ YAP</div>
+      <div class="modal">
+        <div class="drop-shadow">
+          <div class="glass"></div>
+          <div class="login-box">
+            <h2>Giriş Yap</h2>
+            <form action="giris.php" method="post">
+              <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input  type="email" placeholder="Kullanıcı Adı" name="username" />
+              </div>
+
+              <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Şifre" name="password" />
+              </div>
+              <input class="gonder" type="submit" value="Giriş"  />
+              <input class="btn" value="Geri" onclick="closeForm()" />
+            </form>
+            <h6>
+              Şifrenizi Mi Unuttunuz?
+              <a href="#" onclick="closeForm()">Unuttum</a>
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+ 
+
+  <script src="giris.js"></script>
+
+
+
+
+
+
+<!-- javascript ile menuyu açma kapatma -->
+
+<script>
+function openNav() {
+  document.getElementById("YanMenu").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("YanMenu").style.width = "0";
+}
+
+var button = document.getElementById('mainButton');
+var buttonText = document.getElementById('btnText');
+
+var openForm = function() {
+	button.className = 'active';
+	buttonText.style.display = "none";
+};
+
+
+var closeForm = function() {
+	button.className = '';
+	buttonText.style.display = "";
+};
+
+document.addEventListener("keyup", function(e) {
+	if (e.keyCode == 27 || e.keyCode == 13) {
+		closeForm();
+	}
+});
+
+</script>
+
+
+
+
+   
+</body>
+</html>
